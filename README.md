@@ -22,7 +22,7 @@ A powerful and lightweight IntelliJ IDEA plugin that instantly converts Java POJ
 
 1. Open IntelliJ IDEA.
 2. Go to `Settings` > `Plugins` > `Marketplace`.
-3. Search for **"Java Class to JSON Serializer"**.
+3. Search for **"Java2JSON"**.
 4. Click `Install` and restart the IDE if prompted.
 
 ## 📖 How to Use
