@@ -1,0 +1,31 @@
+<idea-plugin>
+    <id>gugli.anto.serializer</id>
+    <name>Java2JSON</name>
+    <vendor email="" url="https://github.com/AntoGugli">Gugli Anto</vendor>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.java</depends>
+
+    <resource-bundle>messages.MyBundle</resource-bundle>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="Java2JSON"
+                    secondary="true"
+                    icon="AllIcons.FileTypes.Json"
+                    anchor="right"
+                    factoryClass="gugli.anto.serializer.toolWindow.MyToolWindowFactory"
+                    doNotActivateOnStart="true"/>
+        <notificationGroup id="Custom Notification Group" displayType="BALLOON"/>
+    </extensions>
+
+    <actions>
+        <action id="gugli.anto.serializer.actions.SerializeClassAction"
+                class="gugli.anto.serializer.actions.SerializeClassAction"
+                text="Serialize Class to JSON"
+                description="Converts the Java class structure into a JSON example">
+            <add-to-group group-id="GenerateGroup" anchor="last"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="control alt J"/>
+        </action>
+    </actions>
+
+</idea-plugin>
