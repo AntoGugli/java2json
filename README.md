@@ -62,7 +62,7 @@ This project is licensed under the **Apache License 2.0** - see the [LICENSE](LI
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a **Pull Request** or report bugs via the [Issue Tracker](https://github.com/AntoGugli/TUO_REPO/issues).
+Contributions are welcome! Please feel free to submit a **Pull Request** or report bugs via the [Issue Tracker](https://github.com/AntoGugli/java2json/issues).
 
 ---
 *Developed with ❤️ for the IntelliJ community.*
