@@ -14,7 +14,7 @@ A powerful and lightweight IntelliJ IDEA plugin that instantly converts Java POJ
   - **Enum Support**: Automatically picks the first available enum constant.
   - **Collections & Maps**: Supports `List`, `Set`, and `Map` with recursive resolution.
 - **Native Search Experience**: Full `Ctrl+F` (Windows/Linux) and `Cmd+F` (macOS) integration to find keys or values instantly.
-- **Clean Formatting**: Generates beautiful, human-readable JSON with a standard **4-space indentation**.
+- **Clean Formatting**: Generates human-readable JSON with a standard **4-space indentation**.
 - **Performance Optimized**: Runs complex PSI analysis in background threads to keep your IDE smooth and responsive.
 - **Cycle Detection**: Built-in protection against circular references to prevent stack overflow errors.
 
