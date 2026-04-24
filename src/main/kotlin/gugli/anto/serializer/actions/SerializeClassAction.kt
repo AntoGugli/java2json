@@ -52,13 +52,11 @@ class SerializeClassAction : AnAction() {
         val editor = FileEditorManager.getInstance(project).selectedTextEditor ?: return "No active editor"
         val psiFile = PsiDocumentManager.getInstance(project).getPsiFile(editor.document) ?: return "Unrecognized file"
 
-        // Trova la prima classe utile nel file
         val psiClass = PsiTreeUtil.findChildOfType(psiFile, PsiClass::class.java)
             ?: return "No Java classes found in the current file"
 
         return try {
             val classMap = classToMap(psiClass, mutableSetOf())
-            // Utilizziamo il writer esplicito con il printer configurato per garantire i 4 spazi ovunque
             objectMapper.writer(objectMapper.serializationConfig.defaultPrettyPrinter)
                 .writeValueAsString(classMap)
         } catch (ex: Exception) {
@@ -79,9 +77,7 @@ class SerializeClassAction : AnAction() {
         }
         visited.add(className)
 
-        // Iterazione su tutti i campi della classe (inclusi quelli ereditati)
         for (field in psiClass.allFields) {
-            // Saltiamo campi tecnici e costanti seriali
             if (field.name == "serialVersionUID" || field.hasModifierProperty(PsiModifier.STATIC)) {
                 continue
             }
