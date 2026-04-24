@@ -28,7 +28,7 @@ class SerializedJsonPanel(val project: Project) : JPanel(BorderLayout()) {
             editor.setVerticalScrollbarVisible(true)
             editor.setHorizontalScrollbarVisible(true)
 
-            // Gestione scorciatoie da tastiera (Ctrl+F o Cmd+F)
+            //Managing keyboard shortcuts (Ctrl+F o Cmd+F)
             editor.contentComponent.addKeyListener(object : KeyAdapter() {
                 override fun keyPressed(e: KeyEvent) {
                     val isShortcutModifier = if (SystemInfo.isMac) e.isMetaDown else e.isControlDown
@@ -57,7 +57,7 @@ class SerializedJsonPanel(val project: Project) : JPanel(BorderLayout()) {
             isWholeWordsOnly = false
         }
 
-        // Avvia la sessione di ricerca nativa (gestisce frecce, Invio ed ESC)
+        //Launch the native search session (supports arrow keys, Enter, and Esc)
         EditorSearchSession.start(editor, findModel, project)
     }
 
