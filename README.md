@@ -1,10 +1,10 @@
-# Java Class to JSON Serializer
+# Java2JSON
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ![Platform](https://img.shields.io/badge/Platform-IntelliJ-orange.svg)
 
 ![Plugin Preview](images/preview.png)
-A powerful and lightweight IntelliJ IDEA plugin that instantly converts Java POJOs into formatted JSON examples. Perfect for API documentation, testing, and debugging.
+Java2JSON is a powerful and lightweight **IntelliJ IDEA plugin** that instantly converts Java POJOs into formatted JSON examples. Perfect for API documentation, testing, and debugging.
 
 ## 🚀 Features
 
@@ -28,7 +28,7 @@ A powerful and lightweight IntelliJ IDEA plugin that instantly converts Java POJ
 ## 📖 How to Use
 
 1. Open the Java class file you want to serialize.
-2. Click on the **JSON Serializer** icon on the right tool window bar.
+2. Click on the **Java2JSON** icon (located on the right tool window bar).
 3. The JSON representation will be generated automatically.
 4. **To Search**: Click inside the JSON text and press `Ctrl+F` (or `Cmd+F` on Mac). Use the arrows or `Enter` to navigate through results.
 
@@ -65,4 +65,4 @@ This project is licensed under the **Apache License 2.0** - see the [LICENSE](LI
 Contributions are welcome! Please feel free to submit a **Pull Request** or report bugs via the [Issue Tracker](https://github.com/AntoGugli/java2json/issues).
 
 ---
-*Developed with ❤️ for the IntelliJ community.*
+*Developed with ❤️ for the IntelliJ community by Antonino Enrico Guglielmino.*
