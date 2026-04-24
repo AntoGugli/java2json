@@ -27,5 +27,4 @@ Community leaders are responsible for clarifying and enforcing our standards of 
 This Code of Conduct applies within all community spaces, and also applies when an individual is officially representing the community in public spaces.
 
 ## Enforcement
-## Enforcement
 Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the project maintainers. All complaints will be reviewed and investigated promptly and fairly. Community leaders maintain the right to remove or block any contributor who violates these standards.
