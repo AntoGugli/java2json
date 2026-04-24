@@ -47,7 +47,7 @@ intellijPlatform {
         }
 
         description.set("""
-            Java Class to JSON Serializer converts your Java POJOs into formatted JSON strings instantly.
+            Java2JSON converts your Java POJOs into formatted JSON strings instantly.
             <br><br>
             <b>Features:</b>
             <ul>
@@ -61,9 +61,7 @@ intellijPlatform {
         """.trimIndent())
     }
 
-    signing {
-        // Qui andranno i certificati se deciderai di firmare il plugin per il Marketplace
-    }
+    signing {}
 }
 
 tasks {
